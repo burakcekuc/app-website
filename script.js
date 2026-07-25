@@ -50,6 +50,19 @@ const translations = {
         copyright: "© 2026 Burak Çeküç Tous droits réservés.",
         privacy: "Politique de Confidentialité",
         terms: "Conditions d'Utilisation"
+    },
+    de: {
+        appName: "Schaffner App",
+        navSupport: "Support",
+        heroTitle: "Verwalte Dein Verkehrsbudget Klüger",
+        heroDesc: "Verwalte dein Verkehrsbudget ganz einfach mit der Schaffner App. Verfolge alle deine Reisekosten, analysiere deine Ausgaben und behalte deine Transportkosten im Griff. Jetzt im App Store oder bei Google Play herunterladen!",
+        appStoreLink: "https://apps.apple.com/us/app/conductor-fare-assistant/id6758008397",
+        googlePlayLink: "https://play.google.com/store/apps/details?id=com.burakcekuc.conductor",
+        appStoreImg: "img/app_store_en.png",
+        googlePlayImg: "img/google_play_en.png",
+        copyright: "© 2026 Burak Çeküç Alle Rechte vorbehalten.",
+        privacy: "Datenschutzrichtlinie",
+        terms: "Nutzungsbedingungen"
     }
 };
 

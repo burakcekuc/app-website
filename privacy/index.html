@@ -204,6 +204,7 @@
                     <option value="tr">TR</option>
                     <option value="es">ES</option>
                     <option value="fr">FR</option>
+                    <option value="de">DE</option>
                 </select>
             </div>
         </div>
@@ -504,6 +505,82 @@
             </ul>
         </div>
 
+        <!-- GERMAN -->
+        <div id="de" class="content-section">
+            <h1>Datenschutzrichtlinie</h1>
+            <span class="date">Letzte Aktualisierung: 25. Juli 2026</span>
+
+            <div class="highlight-box">
+                <strong>Zusammenfassung:</strong> Schaffner: Fahrpreis-Assistent wurde unter Berücksichtigung Ihrer
+                Privatsphäre entwickelt. Wir speichern Ihre personenbezogenen Daten nicht auf unseren Servern.
+                Bestimmte Daten werden von branchenüblichen Drittanbietern für Funktionalität, Analyse und Werbung
+                verarbeitet.
+            </div>
+
+            <p>Diese Datenschutzrichtlinie beschreibt unsere Richtlinien und Verfahren zur Erhebung, Nutzung und
+                Offenlegung Ihrer Informationen bei der Nutzung des Dienstes und informiert Sie über Ihre
+                Datenschutzrechte und wie das Gesetz Sie schützt.</p>
+
+            <h2>1. Auslegung und Definitionen</h2>
+            <ul>
+                <li><strong>Anwendung:</strong> Bezieht sich auf Schaffner: Fahrpreis-Assistent, das vom
+                    Einzelentwickler bereitgestellte Softwareprogramm.</li>
+                <li><strong>Dienst:</strong> Bezieht sich auf die Anwendung.</li>
+                <li><strong>Gerät:</strong> Bezeichnet jedes Gerät, das auf den Dienst zugreifen kann, wie ein
+                    Smartphone oder Tablet.</li>
+            </ul>
+
+            <h2>2. Erhebung und Nutzung Ihrer personenbezogenen Daten</h2>
+            <h3>Arten der erhobenen Daten</h3>
+            <p>Bei der Nutzung unserer Anwendung können, um Funktionen bereitzustellen und Ihre Erfahrung zu
+                verbessern, die folgenden Daten über Drittanbieterdienste erhoben und mit Ihrer Identität verknüpft
+                werden:</p>
+            <ul>
+                <li><strong>Standortdaten:</strong> Ungefähre (grobe) Standortdaten für lokalisierte Funktionen und
+                    Werbung.</li>
+                <li><strong>Kennungen:</strong> Benutzer- und Geräte-IDs (wie die Werbe-ID) für App-Funktionalität,
+                    Analyse und Tracking.</li>
+                <li><strong>Kaufdaten:</strong> Transaktionsverlauf und Abonnementstatus (verarbeitet von
+                    RevenueCat).</li>
+                <li><strong>Nutzungsdaten:</strong> Informationen darüber, wie Sie mit dem Dienst interagieren
+                    (erfasst von Firebase).</li>
+                <li><strong>Diagnosedaten:</strong> Absturzprotokolle und Leistungsstatistiken zur Sicherstellung der
+                    App-Stabilität.</li>
+            </ul>
+
+            <h2>3. Drittanbieter-Dienstleister und Tracking</h2>
+            <p>Wir setzen Drittunternehmen ein, um unseren Dienst zu erleichtern, dienstbezogene Leistungen zu
+                erbringen oder uns bei der Analyse der Nutzung unseres Dienstes zu unterstützen. Diese Dritten haben
+                nur Zugriff auf bestimmte Informationen (Kennungen, Nutzungsdaten), um Aufgaben in unserem Auftrag
+                auszuführen.</p>
+            <p>Wir nutzen Anbieter, die Ihre Aktivitäten über andere Apps und Websites hinweg zu Werbezwecken
+                verfolgen können. Sie können diese Berechtigungen über die Einstellungen Ihres Geräts verwalten.</p>
+            <p>Links zu den Datenschutzrichtlinien der von der App verwendeten Drittanbieter-Dienstleister:</p>
+            <ul>
+                <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase</a></li>
+                <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob</a></li>
+                <li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a></li>
+            </ul>
+
+            <h2>4. Datenlöschung und Sicherheit</h2>
+            <p>Wir führen keine private Datenbank Ihrer persönlichen Identität. Die meisten Daten werden lokal
+                gespeichert oder von den oben genannten Partnern verwaltet. Wenn Sie die Löschung der mit Ihrer
+                Benutzer-ID verknüpften Daten beantragen möchten, kontaktieren Sie uns bitte über unsere
+                Support-E-Mail-Adresse. Wir werden die Anfrage innerhalb eines angemessenen Zeitraums an unsere
+                Dienstleister weiterleiten.</p>
+
+            <h2>5. Datenschutz von Kindern</h2>
+            <p>Diese Dienste richten sich nicht an Personen unter 13 Jahren. Wir erheben wissentlich keine
+                personenbezogenen Daten von Kindern unter 13 Jahren.</p>
+
+            <h2>6. Kontaktieren Sie uns</h2>
+            <p>Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, können Sie uns kontaktieren:</p>
+            <ul>
+                <li>Per E-Mail: <strong>burakcekuc.app@gmail.com</strong></li>
+                <li>Über unsere Support-Seite: <a href="../support/">Support kontaktieren</a></li>
+            </ul>
+        </div>
+
     </main>
 
     <footer>
@@ -524,7 +601,8 @@
                 tr: { brand: 'Kondüktör App', support: 'Destek' },
                 en: { brand: 'Conductor App', support: 'Support' },
                 es: { brand: 'Revisor App', support: 'Soporte' },
-                fr: { brand: 'Contrôleur App', support: 'Support' }
+                fr: { brand: 'Contrôleur App', support: 'Support' },
+                de: { brand: 'Schaffner App', support: 'Support' }
             };
             const lbl = labels[lang] || labels.en;
             document.getElementById('brand-text').innerText = lbl.brand;

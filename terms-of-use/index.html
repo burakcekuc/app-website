@@ -205,6 +205,7 @@
                     <option value="tr">TR</option>
                     <option value="es">ES</option>
                     <option value="fr">FR</option>
+                    <option value="de">DE</option>
                 </select>
             </div>
         </div>
@@ -461,6 +462,67 @@
                     target="_blank">Voir ici</a></p>
         </div>
 
+        <!-- GERMAN -->
+        <div id="de" class="content-section">
+            <h1>Nutzungsbedingungen</h1>
+            <span class="date">Letzte Aktualisierung: 25. Juli 2026</span>
+
+            <div class="highlight-box">
+                <strong>Vereinbarung:</strong> Durch das Herunterladen oder Nutzen der Schaffner App gelten diese
+                Bedingungen automatisch für Sie. Bitte lesen Sie sie sorgfältig, bevor Sie die App verwenden.
+            </div>
+
+            <h2>1. Allgemeine Nutzung</h2>
+            <p>Die Schaffner App wird Ihnen für den persönlichen, nicht-kommerziellen Gebrauch lizenziert (nicht
+                verkauft). Sie dürfen den Quellcode der App weder kopieren noch verändern noch versuchen, ihn zu
+                extrahieren. Die App selbst sowie alle damit verbundenen Marken-, Urheber-, Datenbank- und sonstigen
+                geistigen Eigentumsrechte verbleiben beim Entwickler.</p>
+
+            <h2>2. Abonnements und Zahlungen</h2>
+            <p>Schaffner bietet Premium-Funktionen über automatisch verlängerte Abonnements ("Pass" und "Pass Plus")
+                an. Mit dem Kauf eines Abonnements stimmen Sie den folgenden Bedingungen zu:</p>
+
+            <h3>Zahlung</h3>
+            <p>Die Zahlung wird bei Bestätigung des Kaufs Ihrer Apple-ID oder Ihrem Google Play-Konto belastet. Die
+                Preise werden in der App angezeigt und können je nach Region variieren.</p>
+
+            <h3>Automatische Verlängerung</h3>
+            <p>Das Abonnement verlängert sich automatisch, sofern die automatische Verlängerung nicht mindestens 24
+                Stunden vor Ende des aktuellen Zeitraums deaktiviert wird. Ihr Konto wird innerhalb von 24 Stunden vor
+                Ende des aktuellen Zeitraums mit der Verlängerungsgebühr belastet.</p>
+
+            <h3>Kündigung</h3>
+            <p>Sie können Ihre Abonnements nach dem Kauf über die Kontoeinstellungen im App Store oder Google Play
+                Store verwalten und kündigen. Das Löschen der App kündigt das Abonnement nicht.</p>
+
+            <h2>3. Rückerstattungen</h2>
+            <p>Alle Käufe werden direkt von den jeweiligen App-Stores (Apple App Store oder Google Play Store)
+                verwaltet. Wir sind nicht in der Lage, Rückerstattungen direkt zu bearbeiten. Bitte wenden Sie sich
+                für Rückerstattungsanfragen an den Apple- oder Google-Support.</p>
+
+            <h2>4. Finanzieller Haftungsausschluss</h2>
+            <p>Diese Anwendung ist als manuelles Werkzeug zur Budgetverfolgung und -berechnung konzipiert.
+                <strong>Sie bietet keine professionelle Finanzberatung, Anlageberatung oder Bankdienstleistungen.</strong>
+                Sie sind für Ihre eigenen finanziellen Entscheidungen verantwortlich.</p>
+
+            <h2>5. Plattform-Haftungsausschluss (Vertreiber)</h2>
+            <p>Apple und Google fungieren ausschließlich als "Vertreiber" dieser Anwendung. <strong>Apple/Google sind
+                    nicht verantwortlich für den Inhalt, die Wartung oder die Support-Dienste dieser App.</strong>
+                Die gesamte Verantwortung liegt vollständig beim Entwickler.</p>
+
+            <h2>6. Änderungen dieser Bedingungen</h2>
+            <p>Wir können unsere Allgemeinen Geschäftsbedingungen von Zeit zu Zeit aktualisieren. Es wird daher
+                empfohlen, diese Seite regelmäßig auf Änderungen zu überprüfen. Wir werden Sie über etwaige Änderungen
+                informieren, indem wir die neuen Bedingungen auf dieser Seite veröffentlichen.</p>
+
+            <h2>7. Kontaktieren Sie uns</h2>
+            <p>Wenn Sie Fragen oder Anregungen zu unseren Nutzungsbedingungen haben, zögern Sie nicht, uns unter
+                <strong>burakcekuc.app@gmail.com</strong> zu kontaktieren.
+            </p>
+            <p>Apple Standard-EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                    target="_blank">Hier ansehen</a></p>
+        </div>
+
     </main>
 
     <footer>
@@ -481,7 +543,8 @@
                 tr: { brand: 'Kondüktör App', support: 'Destek' },
                 en: { brand: 'Conductor App', support: 'Support' },
                 es: { brand: 'Revisor App', support: 'Soporte' },
-                fr: { brand: 'Contrôleur App', support: 'Support' }
+                fr: { brand: 'Contrôleur App', support: 'Support' },
+                de: { brand: 'Schaffner App', support: 'Support' }
             };
             const lbl = labels[lang] || labels.en;
             document.getElementById('brand-text').innerText = lbl.brand;
