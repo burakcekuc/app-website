@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZ2R4CW2ME"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QZ2R4CW2ME');
+
+        // Global Click Tracking for Buttons and Links
+        document.addEventListener('click', (e) => {
+            const target = e.target.closest('a, button');
+            if (target) {
+                const label = target.innerText.trim() || target.getAttribute('aria-label') || target.id || target.name || 'unlabeled';
+                gtag('event', 'ui_click', {
+                    'element_text': label.substring(0, 40),
+                    'element_type': target.tagName.toLowerCase(),
+                    'element_id': target.id || 'none',
+                    'link_url': target.href || 'none'
+                });
+            }
+        }, true);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conductor App - Terms of Use</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #e61919;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+            --heading-color: #000;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Spline Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--card-bg);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .lang-select {
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: none;
+            background: #e2e8f0;
+            color: #334155;
+            cursor: pointer;
+            font-family: 'Spline Sans', sans-serif;
+            outline: none;
+        }
+
+        .content-section {
+            display: none;
+            padding: 40px 0;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--heading-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--heading-color);
+            margin-top: 2rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: var(--heading-color);
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        p,
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: #ffe0e0;
+            border: 1px solid #ff6969;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 40px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="brand">
+                <span id="brand-text">Conductor App</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <a href="../support/" id="nav-support"
+                    style="color: white; text-decoration: none; font-size: 0.9rem; font-weight: 500;">Support</a>
+
+                <select class="lang-select" id="lang-select">
+                    <option value="en">EN</option>
+                    <option value="tr">TR</option>
+                    <option value="es">ES</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ENGLISH -->
+        <div id="en" class="content-section">
+            <h1>Terms of Use</h1>
+            <span class="date">Last updated: February 20, 2026</span>
+
+            <div class="highlight-box">
+                <strong>Agreement:</strong> By downloading or using Conductor App, these terms will automatically apply
+                to you. Please read them carefully before using the app.
+            </div>
+
+            <h2>1. General Usage</h2>
+            <p>Conductor App is licensed to you (not sold) for personal, non-commercial use. You may not copy, modify,
+                or attempt to extract the source code of the app. The app itself, and all the trade marks, copyright,
+                database rights and other intellectual property rights related to it, still belong to the developer.</p>
+
+            <h2>2. Subscriptions and Payments</h2>
+            <p>Conductor offers premium features through auto-renewing subscriptions ("Pass" and "Pass Plus"). By
+                purchasing a subscription, you agree to the following terms:</p>
+
+            <h3>Payment</h3>
+            <p>Payment will be charged to your Apple ID or Google Play Account at confirmation of purchase. Prices are
+                displayed in the app and may vary by region.</p>
+
+            <h3>Auto-Renewal</h3>
+            <p>Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the
+                current period. Your account will be charged for renewal within 24-hours prior to the end of the current
+                period.</p>
+
+            <h3>Cancellation</h3>
+            <p>You can manage and cancel your subscriptions by going to your Account Settings on the App Store or Google
+                Play Store after purchase. Deleting the app does not cancel the subscription.</p>
+
+            <h2>3. Refunds</h2>
+            <p>All purchases are managed directly by the respective app stores (Apple App Store or Google Play Store).
+                We do not have the ability to process refunds directly. Please contact Apple or Google support for any
+                refund requests.</p>
+
+            <h2>4. Financial Disclaimer</h2>
+            <p>This application is designed as a manual budget tracking and calculation tool. <strong>It does not
+                    provide professional financial advice, investment advice, or banking services.</strong> You are
+                responsible for your own financial decisions.</p>
+
+            <h2>5. Platform Disclaimer (Distributors)</h2>
+            <p>Apple and Google act solely as "Distributors" of this application. <strong>Apple/Google are not
+                    responsible for the content, maintenance, or support services of this app.</strong> All
+                responsibility belongs entirely to the developer.</p>
+
+            <h2>6. Changes to These Terms</h2>
+            <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page
+                periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions
+                on this page.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions or suggestions about our Terms of Use, do not hesitate to contact us at
+                <strong>burakcekuc.app@gmail.com</strong>.
+            </p>
+            <p>Apple Standard EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                    target="_blank">View Here</a></p>
+        </div>
+
+        <!-- TURKISH -->
+        <div id="tr" class="content-section">
+            <h1>Kullanım Koşulları</h1>
+            <span class="date">Son güncelleme: 20 Şubat 2026</span>
+
+            <div class="highlight-box">
+                <strong>Anlaşma:</strong> Kondüktör App'i indirerek veya kullanarak, bu koşulların otomatik olarak sizin
+                için geçerli olacağını kabul etmiş olursunuz. Lütfen kullanmadan önce dikkatlice okuyun.
+            </div>
+
+            <h2>1. Genel Kullanım</h2>
+            <p>Kondüktör App, kişisel ve ticari olmayan kullanımınız için size lisanslanmıştır (satılmamıştır).
+                Uygulamanın kaynak kodunu kopyalayamaz, değiştiremez veya çıkarmaya çalışamazsınız. Uygulamanın kendisi
+                ve onunla ilgili tüm ticari markalar, telif hakları ve diğer fikri mülkiyet hakları geliştiriciye
+                aittir.</p>
+
+            <h2>2. Abonelikler ve Ödemeler</h2>
+            <p>Kondüktör, otomatik yenilenen abonelikler ("Pass" ve "Pass Plus") aracılığıyla premium özellikler sunar.
+                Bir abonelik satın alarak aşağıdaki şartları kabul edersiniz:</p>
+
+            <h3>Ödeme</h3>
+            <p>Ödeme, satın alma onayının ardından Apple ID veya Google Play Hesabınızdan tahsil edilecektir. Fiyatlar
+                uygulama içinde gösterilir ve bölgeye göre değişiklik gösterebilir.</p>
+
+            <h3>Otomatik Yenileme</h3>
+            <p>Otomatik yenileme, mevcut dönemin bitiminden en az 24 saat önce kapatılmadığı sürece abonelik otomatik
+                olarak yenilenir. Hesabınız, mevcut dönemin bitiminden önceki 24 saat içinde yenileme için
+                ücretlendirilecektir.</p>
+
+            <h3>İptal</h3>
+            <p>Aboneliklerinizi satın aldıktan sonra App Store veya Google Play Store'daki Hesap Ayarlarınıza giderek
+                yönetebilir ve iptal edebilirsiniz. Uygulamayı silmek aboneliği iptal etmez.</p>
+
+            <h2>3. İadeler</h2>
+            <p>Tüm satın alma işlemleri doğrudan ilgili uygulama mağazaları (Apple App Store veya Google Play Store)
+                tarafından yönetilir. İadeleri doğrudan işleme yeteneğimiz yoktur. İade talepleri için lütfen Apple veya
+                Google destek ekibiyle iletişime geçin.</p>
+
+            <h2>4. Finansal Yasal Uyarı</h2>
+            <p>Bu uygulama manuel bir bütçe takip ve hesaplama aracı olarak tasarlanmıştır. <strong>Profesyonel finansal
+                    danışmanlık, yatırım tavsiyesi veya bankacılık hizmeti sunmaz.</strong> Kendi finansal
+                kararlarınızdan siz sorumlusunuz.</p>
+
+            <h2>5. Dağıtıcı Platformlar (Sorumluluk Reddi)</h2>
+            <p>Apple ve Google bu uygulamada yalnızca "Distribütör" (Dağıtıcı) olarak yer almaktadır.
+                <strong>Apple/Google, bu uygulamanın içeriğinden, bakımından veya destek hizmetlerinden sorumlu
+                    değildir.</strong> Tüm sorumluluk geliştiriciye aittir.
+            </p>
+
+            <h2>6. Değişiklikler</h2>
+            <p>Hüküm ve Koşullarımızı zaman zaman güncelleyebiliriz. Bu nedenle, herhangi bir değişiklik için bu sayfayı
+                periyodik olarak incelemeniz tavsiye edilir.</p>
+
+            <h2>7. İletişim</h2>
+            <p>Kullanım Koşullarımız hakkında herhangi bir sorunuz varsa, bizimle iletişime geçmekten çekinmeyin:
+                <strong>burakcekuc.app@gmail.com</strong>.
+            </p>
+            <p>Apple Standart EULA (Son Kullanıcı Lisans Sözleşmesi): <a
+                    href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Buradan
+                    İnceleyin</a></p>
+        </div>
+
+        <!-- SPANISH -->
+        <div id="es" class="content-section">
+            <h1>Términos de Uso</h1>
+            <span class="date">Última actualización: 20 de febrero de 2026</span>
+
+            <div class="highlight-box">
+                <strong>Acuerdo:</strong> Al descargar o usar Revisor App, estos términos se aplicarán
+                automáticamente. Por favor léalos cuidadosamente antes de usar la aplicación.
+            </div>
+
+            <h2>1. Uso General</h2>
+            <p>Revisor App está licenciada para usted (no vendida) para uso personal y no comercial. No puede copiar,
+                modificar ni intentar extraer el código fuente de la aplicación. La aplicación en sí, y todas las
+                marcas comerciales, derechos de autor, derechos de bases de datos y otros derechos de propiedad
+                intelectual relacionados, siguen perteneciendo al desarrollador.</p>
+
+            <h2>2. Suscripciones y Pagos</h2>
+            <p>Revisor ofrece funciones premium a través de suscripciones de renovación automática ("Pass" y "Pass
+                Plus"). Al comprar una suscripción, acepta los siguientes términos:</p>
+
+            <h3>Pago</h3>
+            <p>El pago se cargará a su ID de Apple o Cuenta de Google Play al confirmar la compra. Los precios se
+                muestran en la aplicación y pueden variar según la región.</p>
+
+            <h3>Renovación Automática</h3>
+            <p>La suscripción se renueva automáticamente a menos que la renovación automática se desactive al menos
+                24 horas antes del final del período actual. Su cuenta será cobrada por la renovación dentro de las
+                24 horas anteriores al final del período actual.</p>
+
+            <h3>Cancelación</h3>
+            <p>Puede administrar y cancelar sus suscripciones accediendo a la Configuración de su Cuenta en el
+                App Store o Google Play Store después de la compra. Eliminar la aplicación no cancela la suscripción.
+            </p>
+
+            <h2>3. Reembolsos</h2>
+            <p>Todas las compras son gestionadas directamente por las tiendas de aplicaciones respectivas (Apple
+                App Store o Google Play Store). No tenemos la capacidad de procesar reembolsos directamente. Contacte
+                con el soporte de Apple o Google para cualquier solicitud de reembolso.</p>
+
+            <h2>4. Aviso Legal Financiero</h2>
+            <p>Esta aplicación está diseñada como una herramienta manual de seguimiento y cálculo de presupuestos.
+                <strong>No proporciona asesoramiento financiero profesional, asesoramiento de inversiones, ni servicios
+                    bancarios.</strong> Usted es responsable de sus propias decisiones financieras.
+            </p>
+
+            <h2>5. Aviso Legal de Plataforma (Distribuidores)</h2>
+            <p>Apple y Google actúan únicamente como "Distribuidores" de esta aplicación. <strong>Apple/Google no son
+                    responsables del contenido, mantenimiento o servicios de soporte de esta aplicación.</strong> Toda
+                la responsabilidad corresponde íntegramente al desarrollador.</p>
+
+            <h2>6. Cambios en estos Términos</h2>
+            <p>Podemos actualizar nuestros Términos y Condiciones de vez en cuando. Por lo tanto, se le aconseja
+                revisar esta página periódicamente para detectar cualquier cambio. Le notificaremos cualquier cambio
+                publicando los nuevos Términos y Condiciones en esta página.</p>
+
+            <h2>7. Contáctenos</h2>
+            <p>Si tiene alguna pregunta o sugerencia sobre nuestros Términos de Uso, no dude en contactarnos en
+                <strong>burakcekuc.app@gmail.com</strong>.
+            </p>
+            <p>CLUF estándar de Apple: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                    target="_blank">Ver aquí</a></p>
+        </div>
+
+        <!-- FRENCH -->
+        <div id="fr" class="content-section">
+            <h1>Conditions d'Utilisation</h1>
+            <span class="date">Dernière mise à jour : 20 février 2026</span>
+
+            <div class="highlight-box">
+                <strong>Accord :</strong> En téléchargeant ou en utilisant Contrôleur App, ces conditions s'appliqueront
+                automatiquement. Veuillez les lire attentivement avant d'utiliser l'application.
+            </div>
+
+            <h2>1. Utilisation Générale</h2>
+            <p>Contrôleur App vous est accordée sous licence (non vendue) pour un usage personnel et non commercial.
+                Vous ne pouvez pas copier, modifier ni tenter d'extraire le code source de l'application. L'application
+                elle-même, ainsi que toutes les marques commerciales, droits d'auteur, droits sur les bases de données
+                et autres droits de propriété intellectuelle qui y sont liés, appartiennent toujours au développeur.</p>
+
+            <h2>2. Abonnements et Paiements</h2>
+            <p>Contrôleur propose des fonctionnalités premium via des abonnements à renouvellement automatique ("Pass"
+                et "Pass Plus"). En achetant un abonnement, vous acceptez les conditions suivantes :</p>
+
+            <h3>Paiement</h3>
+            <p>Le paiement sera débité de votre identifiant Apple ou Compte Google Play à la confirmation de l'achat.
+                Les prix sont affichés dans l'application et peuvent varier selon la région.</p>
+
+            <h3>Renouvellement Automatique</h3>
+            <p>L'abonnement se renouvelle automatiquement sauf si le renouvellement automatique est désactivé au moins
+                24 heures avant la fin de la période en cours. Votre compte sera débité pour le renouvellement dans les
+                24 heures précédant la fin de la période en cours.</p>
+
+            <h3>Annulation</h3>
+            <p>Vous pouvez gérer et annuler vos abonnements en accédant aux Paramètres de votre Compte sur l'App Store
+                ou Google Play Store après l'achat. La suppression de l'application n'annule pas l'abonnement.</p>
+
+            <h2>3. Remboursements</h2>
+            <p>Tous les achats sont gérés directement par les boutiques d'applications respectives (Apple App Store ou
+                Google Play Store). Nous n'avons pas la capacité de traiter les remboursements directement. Veuillez
+                contacter l'assistance Apple ou Google pour toute demande de remboursement.</p>
+
+            <h2>4. Avis de Non-Responsabilité Financière</h2>
+            <p>Cette application est conçue comme un outil manuel de suivi et de calcul de budget.
+                <strong>Elle ne fournit pas de conseils financiers professionnels, de conseils en investissement, ni de
+                    services bancaires.</strong> Vous êtes responsable de vos propres décisions financières.
+            </p>
+
+            <h2>5. Avis de Non-Responsabilité de Plateforme (Distributeurs)</h2>
+            <p>Apple et Google agissent uniquement en tant que "Distributeurs" de cette application.
+                <strong>Apple/Google ne sont pas responsables du contenu, de la maintenance ou des services
+                    d'assistance de cette application.</strong> Toute responsabilité appartient entièrement au
+                développeur.
+            </p>
+
+            <h2>6. Modifications de ces Conditions</h2>
+            <p>Nous pouvons mettre à jour nos Conditions Générales de temps à autre. Ainsi, il vous est conseillé de
+                consulter cette page périodiquement pour tout changement. Nous vous informerons de tout changement en
+                publiant les nouvelles Conditions Générales sur cette page.</p>
+
+            <h2>7. Contactez-Nous</h2>
+            <p>Si vous avez des questions ou des suggestions concernant nos Conditions d'Utilisation, n'hésitez pas à
+                nous contacter à <strong>burakcekuc.app@gmail.com</strong>.
+            </p>
+            <p>CLUF Apple standard : <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                    target="_blank">Voir ici</a></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 Burak Çeküç. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+            const section = document.getElementById(lang);
+            if (section) section.classList.add('active');
+
+            document.getElementById('lang-select').value = lang;
+
+            const labels = {
+                tr: { brand: 'Kondüktör App', support: 'Destek' },
+                en: { brand: 'Conductor App', support: 'Support' },
+                es: { brand: 'Revisor App', support: 'Soporte' },
+                fr: { brand: 'Contrôleur App', support: 'Support' }
+            };
+            const lbl = labels[lang] || labels.en;
+            document.getElementById('brand-text').innerText = lbl.brand;
+            document.getElementById('nav-support').innerText = lbl.support;
+
+            localStorage.setItem('conductor-lang', lang);
+            document.documentElement.lang = lang;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('conductor-lang') || 'en';
+            switchLang(savedLang);
+            document.getElementById('lang-select').addEventListener('change', e => switchLang(e.target.value));
+        });
+    </script>
+
+</body>
+
+</html>
